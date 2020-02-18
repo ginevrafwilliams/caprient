@@ -1,11 +1,102 @@
 .project .banner {
-  background-image: image-url("grotta2.jpeg");
+  background-image: image-url("totti_pietro.jpg");
   background-size: cover;
   background-position: center;
-  padding: 150px 0;
+  width: 100%;
+  height: 250px;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
   box-shadow: 0 16px 40px rgba(0,0,0,0.12);
 }
 
-h3 {
-  color: red !important;
+.project .banner .regia h3 {
+  visibility: hidden;
+}
+
+.project .banner .distribuzione h3 {
+  visibility: hidden;
+}
+
+.project .info2 h3 {
+  color: white;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.project .info2 .status {
+  font-weight: lighter;
+  font-size: 20px;
+  opacity: 0.5;
+}
+
+.project .info2 .titolo {
+  font-size: 20px;
+}
+
+@media (min-width: 800px) {
+  .project {
+    width: 60%;
+  }
+  .project .banner {
+    height: 400px;
+    width: 100%;
+    margin: 0px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    border-radius: 4px;
+  }
+
+  .project .banner:hover {
+    background-color: rgba(255, 0, 0, 0.6);
+  }
+
+  .project a {
+    text-decoration: none;
+  }
+
+  .project .banner:hover .regia h3 {
+      visibility: visible;
+      color: white;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  }
+
+  .project .banner:hover .regia {
+    padding-left: 20px;
+    padding-top: 20px;
+  }
+
+  .project .banner:hover .regia .categoria {
+    font-weight: lighter;
+    font-size: 20px;
+  }
+
+  .project .banner:hover .regia .contenuto {
+    font-size: 20px;
+  }
+
+  .project .banner:hover .distribuzione .categoria {
+    font-weight: lighter;
+    font-size: 20px;
+  }
+
+  .project .banner:hover .distribuzione .contenuto {
+    font-size: 20px;
+  }
+
+  .project .banner:hover .distribuzione {
+    padding-left: 20px;
+    padding-top: 20px;
+  }
+
+  .project .banner:hover .distribuzione h3 {
+      visibility: visible;
+      color: white;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  }
+
+  .project .info2 .titolo {
+  font-size: 25px;
+  }
 }

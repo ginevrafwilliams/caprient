@@ -1,0 +1,24 @@
+// navbar transparent
+
+.navbar-trn {
+  z-index: 999;
+  background-color: transparent !important;
+}
+
+// dropdown
+
+.navbar-trn .navbar-nav > li > .dropdown-menu {
+  background-color: transparent;
+  margin: -5px 1px 0;
+  border: none;
+}
+
+.navbar-trn .dropdown-item:hover, .dropdown-item:focus {
+    background-color: transparent;
+}
+
+// burger
+
+.navbar-light .navbar-toggler {
+    border: none;
+}

@@ -1,0 +1,119 @@
+.footer-ce-trn {
+  background-color: #001525;
+}
+
+.my-footer {
+  z-index: 999;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  background: none;
+}
+
+.footer-ce-trn .info {
+  margin-left: 40px;
+  margin-right: 40px;
+  padding-bottom: 20px;
+  font-size: 10px;
+}
+
+.footer-ce-trn .info p {
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
+
+.footer-ce-trn .info p a {
+  color: white;
+  opacity: 0.5;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
+
+.footer-ce-trn .info p a:hover {
+  color: white;
+  opacity: 1;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
+
+.footer-ce-trn .social {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  margin-left: 40px;
+  margin-right: 40px;
+  }
+
+.footer-ce-trn .social .fa-facebook-f:before {
+  color: white;
+  font-size: 20px;
+  opacity: 0.5;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
+
+.footer-ce-trn .social .fa-instagram:before {
+  color: white;
+  font-size: 20px;
+  opacity: 0.5;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
+
+.footer-ce-trn .social .fa-linkedin-in:before {
+  color: white;
+  font-size: 20px;
+  opacity: 0.5;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
+
+.footer-ce-trn a:hover .fa-facebook-f:before {
+  color: white;
+  opacity: 1;
+}
+
+.footer-ce-trn a:hover .fa-instagram:before  {
+  color: white;
+  opacity: 1;
+}
+
+.footer-ce-trn a:hover .fa-linkedin-in:before {
+  color: white;
+  opacity: 1;
+}
+
+.info p a:hover {
+  color: white;
+  opacity: 1;
+  text-decoration: none;
+}
+
+@media (min-width: 600px) {
+  .footer-ce-trn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer-ce-trn .info {
+    margin-top: 10px;
+    font-size: 12px;
+  }
+
+  .footer-ce-trn .info p {
+    color: white;
+    margin-bottom: 0px;
+  }
+
+  .footer-ce-trn .social {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  .footer-ce-trn .social .fa-facebook-f:before {
+    font-size: 30px;
+  }
+
+  .footer-ce-trn .social .fa-instagram:before {
+    font-size: 30px;
+  }
+
+  .footer-ce-trn .social .fa-linkedin-in:before {
+    font-size: 30px;
+  }
+}

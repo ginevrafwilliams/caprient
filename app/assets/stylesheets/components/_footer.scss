@@ -1,0 +1,86 @@
+.footer-ce {
+  background-color: #001525;
+}
+
+.info {
+  margin-left: 40px;
+  margin-right: 40px;
+  padding-bottom: 20px;
+  font-size: 10px;
+}
+
+.info p {
+  color: white;
+  margin-bottom: 0px;
+}
+
+.info p a {
+  color: white;
+  opacity: 0.5;
+}
+
+.info p a:hover {
+  color: white;
+  opacity: 1;
+}
+
+.social {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  margin-left: 40px;
+  margin-right: 40px;
+  }
+
+.social .fa-facebook-f:before {
+  color: white;
+  font-size: 20px;
+  opacity: 0.5;
+}
+
+.social .fa-instagram:before {
+  color: white;
+  font-size: 20px;
+  opacity: 0.5;
+}
+
+.social .fa-linkedin-in:before {
+  color: white;
+  font-size: 20px;
+  opacity: 0.5;
+}
+
+@media (min-width: 600px) {
+  .footer-ce {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+  }
+
+  .info {
+    margin-top: 10px;
+    font-size: 12px;
+  }
+
+  .info p {
+    color: white;
+    margin-bottom: 0px;
+  }
+
+  .social {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  .social .fa-facebook-f:before {
+    font-size: 30px;
+  }
+
+  .social .fa-instagram:before {
+    font-size: 30px;
+  }
+
+  .social .fa-linkedin-in:before {
+    font-size: 30px;
+  }
+}

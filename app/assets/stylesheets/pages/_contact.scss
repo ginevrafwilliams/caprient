@@ -1,0 +1,98 @@
+.box-map {
+  background-image: image-url("map.png");
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 16px 40px rgba(0,0,0,0.12);
+  height: 100vh;
+  position: relative;
+}
+
+.box-map h1 {
+  margin: 0;
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.box-map p {
+  margin: 0;
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  font-size: 14px;
+  font-weight: normal;
+  text-align: center;
+}
+
+.box-map .small {
+  font-size: 10px;
+}
+
+.contact {
+  margin-bottom: 60px;
+  margin-top: 40px;
+}
+
+.address {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.box-contact {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.fa-facebook-f:before {
+  color: white;
+  font-size: 25px;
+  opacity: 0.5;
+}
+
+a:hover .fa-facebook-f:before {
+  color: white;
+  opacity: 1;
+}
+
+a:hover .fa-instagram:before  {
+  color: white;
+  opacity: 1;
+}
+
+a:hover .fa-linkedin-in:before {
+  color: white;
+  opacity: 1;
+}
+
+.fa-instagram:before {
+  color: white;
+  font-size: 25px;
+  margin: 0 30px;
+  opacity: 0.5;
+}
+
+.fa-linkedin-in:before {
+  color: white;
+  font-size: 25px;
+  opacity: 0.5;
+}
+
+@media (min-width: 375px) {
+  .box-map h1 {
+    font-size: 27px;
+  }
+
+  .box-map p {
+    font-size: 22px;
+  }
+
+  .box-map .small {
+    font-size: 12px;
+  }
+
+}

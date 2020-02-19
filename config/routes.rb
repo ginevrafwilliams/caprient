@@ -1,4 +1,9 @@
 Rails.application.routes.draw do
+  namespace :admin do
+      resources :projects
+
+      root to: "projects#index"
+    end
   get 'projects', to: 'projects#index'
   get 'projects/:id', to: 'projects#show', as: :project
   get 'about', to: 'pages#about'

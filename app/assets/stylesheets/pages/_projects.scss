@@ -46,6 +46,12 @@
     width: 60%;
   }
 
+  .project-box-right {
+    width: 60%;
+    margin-left: auto;
+    padding-right: 40px;
+  }
+
   .project .banner {
     height: 400px;
     width: 100%;
@@ -56,8 +62,8 @@
     border-radius: 4px;
   }
 
-  .project .banner:hover {
-    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7));
+  .project .banner:hover img {
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7))
   }
 
   .project a {

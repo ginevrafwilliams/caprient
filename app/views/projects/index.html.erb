@@ -36,26 +36,26 @@
 <!-- project right -->
 
   <div class="project">
-    <% @projects.each do |project| %>
-      <%= link_to projects_path do %>
-        <div class="project-box">
-          <div class="gigi">
-            <div class="banner" style="background-image: url('<%= cl_image_path project.image.key %>')">
-              <div class="regia">
-                <h3 class="categoria">REGIA</h3>
-                <h3 class="contenuto"><%= project.direction %></h3>
+    <% @projects.each_with_index do |project| %>
+
+        <%= link_to projects_path do %>
+          <div class="project-box">
+              <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url('<%= cl_image_path project.image.key %>')">
+                <div class="regia">
+                  <h3 class="categoria">REGIA</h3>
+                  <h3 class="contenuto"><%= project.direction %></h3>
+                </div>
+                <div class="distribuzione">
+                  <h3 class="categoria">DISTRIBUZIONE</h3>
+                  <h3 class="contenuto"><%= project.distribution %></h3>
+                </div>
               </div>
-              <div class="distribuzione">
-                <h3 class="categoria">DISTRIBUZIONE</h3>
-                <h3 class="contenuto"><%= project.distribution %></h3>
-              </div>
+            <div class="info2">
+              <h3 class="status"><%= project.year %></h3>
+              <h3 class="titolo"><%= project.title %></h3>
             </div>
           </div>
-          <div class="info2">
-            <h3 class="status"><%= project.year %></h3>
-            <h3 class="titolo"><%= project.title %></h3>
-          </div>
-        </div>
-      <% end %>
+        <% end %>
+
     <% end %>
   </div>

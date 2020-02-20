@@ -38,10 +38,10 @@
   <div class="project">
     <% @projects.each_with_index do |project, index| %>
 
-    <% if index.even? %>
+      <% if index.even? %>
 
-        <%= link_to project_path(project) do %>
-          <div class="project-box">
+        <div class="project-box">
+          <%= link_to project_path(project) do %>
               <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('<%= cl_image_path project.image.key %>')">
                 <div class="regia">
                   <h3 class="categoria">REGIA</h3>
@@ -61,9 +61,9 @@
 
     <% else %>
 
-        <%= link_to projects_path do %>
           <div class="project-box-right">
-              <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url('<%= cl_image_path project.image.key %>')">
+            <%= link_to project_path(project) do %>
+              <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('<%= cl_image_path project.image.key %>')">
                 <div class="regia">
                   <h3 class="categoria">REGIA</h3>
                   <h3 class="contenuto"><%= project.direction %></h3>

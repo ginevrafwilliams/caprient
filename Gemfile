@@ -14,8 +14,9 @@ gem 'sassc-rails'
 gem 'simple_form'
 gem 'uglifier'
 gem 'webpacker'
-gem "administrate"
 gem 'cloudinary', '~> 1.12.0'
+gem "administrate"
+gem 'administrate-field-active_storage'
 
 group :development do
   gem 'web-console', '>= 3.3.0'

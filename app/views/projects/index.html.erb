@@ -38,7 +38,7 @@
   <div class="project">
     <% @projects.each do |project| %>
       <%= link_to projects_path do %>
-        <div class="banner">
+        <div class="banner" style="background-image: url('<%= cl_image_path "A1YQpNgTPguLCyt9cT1QBSFv" %>')">
           <div class="regia">
             <h3 class="categoria">REGIA</h3>
             <h3 class="contenuto"><%= project.direction %></h3>

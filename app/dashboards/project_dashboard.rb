@@ -11,7 +11,7 @@ class ProjectDashboard < Administrate::BaseDashboard
     id: Field::Number,
     title: Field::String,
     photo: Field::String,
-    attachment: Field::ActiveStorage.with_options({show_in_index: true}),
+    image: Field::ActiveStorage.with_options({show_in_index: true}),
     year: Field::String,
     direction: Field::String,
     coproduction: Field::String,
@@ -30,6 +30,7 @@ class ProjectDashboard < Administrate::BaseDashboard
   id
   title
   year
+  image
   ].freeze
 
   # SHOW_PAGE_ATTRIBUTES
@@ -38,7 +39,7 @@ class ProjectDashboard < Administrate::BaseDashboard
   id
   title
   year
-  attachment
+  image
   direction
   coproduction
   distribution
@@ -53,11 +54,11 @@ class ProjectDashboard < Administrate::BaseDashboard
   FORM_ATTRIBUTES = %i[
   title
   year
-  attachment
   direction
   coproduction
   distribution
   story
+  image
   ].freeze
 
   # COLLECTION_FILTERS

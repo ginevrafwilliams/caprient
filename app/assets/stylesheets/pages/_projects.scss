@@ -1,5 +1,5 @@
 .project .banner {
-  background-image: image-url("totti_pietro.jpg");
+  // background-image: image-url("totti_pietro.jpg");
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -49,11 +49,7 @@
   }
 
   .project .banner:hover {
-  // content:"";
-  // display:block;
-  // position:absolute;
-  // background:rgba(0,0,0,0.6);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), image-url("totti_pietro.jpg");
+    // background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), image-url("totti_pietro.jpg");
   }
 
   .project a {

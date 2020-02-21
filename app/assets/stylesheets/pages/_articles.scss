@@ -26,3 +26,60 @@
 .article .article-info .titolo {
   font-size: 20px;
 }
+
+@media (min-width: 1000px) {
+  .article img {
+    height: 400px;
+    margin-left: 30px;
+    border-radius: 4px;
+  }
+
+  .article-box {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-bottom: 60px;
+  }
+
+  .article .article-box .banner {
+    width: 50%;
+  }
+
+  .article-info {
+    padding-top: 30px;
+    margin-left: 0;
+    padding-right: 30px;
+    padding-top: 40px;
+    width: 360px;
+  }
+
+  .article .article-info .titolo {
+    font-size: 35px;
+  }
+
+  .article .article-info .categoria {
+    margin-bottom: 20px;
+  }
+
+  .article .article-box-right {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-bottom: 60px;
+    flex-direction: row-reverse;
+  }
+
+  .article .article-box-right .banner {
+    width: 50%;
+    margin-right: 70px;
+  }
+
+  .article .article-box-right {
+    margin-right: 30px;
+  }
+
+  .article .article-box-right .article-info {
+    margin-left: 70px;
+  }
+
+}

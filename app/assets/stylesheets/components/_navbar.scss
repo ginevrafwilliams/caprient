@@ -5,7 +5,7 @@
   // position: fixed;
   width: 100%;
   padding-top: 5px;
-  padding-bottom: 5px;
+  padding-bottom: 50px;
 }
 
 .navbar-brand img {
@@ -72,6 +72,10 @@
 @media (max-width: 1000px)  {
   #navbarSupportedContent {
     height: 100vh !important;
+  }
+
+  .bg-light {
+    padding-bottom: 5px;
   }
 
   .navbar-light .navbar-nav .nav-link {

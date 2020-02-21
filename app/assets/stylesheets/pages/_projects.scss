@@ -1,7 +1,3 @@
-.project {
-  margin-bottom: 50px;
-}
-
 .project .banner {
   background-size: cover;
   background-position: center;
@@ -44,27 +40,24 @@
 @media (min-width: 800px) {
   .project {
     width: 100%;
-    margin-bottom: 70px;
   }
 
-  .project-box {
-    width: 60%;
+  .project .info2 {
+    padding-bottom: 60px;
   }
 
-  .project-box-right {
-    width: 60%;
-    margin-left: auto;
-    padding-right: 40px;
-  }
+  // .project-box-right {
+  //   width: 80%;
+  //   margin-left: auto;
+  //   padding-right: 40px;
+  // }
 
   .project .banner {
     height: 400px;
     width: 100%;
     margin: 0px;
-    margin-left: 20px;
     margin-bottom: 20px;
-    margin-top: 20px;
-    border-radius: 4px;
+    margin-top: 30px;
   }
 
   .project .banner:hover img {

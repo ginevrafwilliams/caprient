@@ -36,54 +36,29 @@
 <!-- projects -->
 
   <div class="project">
-    <% @projects.each_with_index do |project, index| %>
-
-      <% if index.even? %>
-
-        <div class="project-box">
-          <%= link_to project_path(project) do %>
-              <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('<%= cl_image_path project.image.key %>')">
-                <div class="regia">
-                  <h3 class="categoria">REGIA</h3>
-                  <h3 class="contenuto"><%= project.direction %></h3>
-                </div>
-                <div class="distribuzione">
-                  <h3 class="categoria">DISTRIBUZIONE</h3>
-                  <h3 class="contenuto"><%= project.distribution %></h3>
-                </div>
-              </div>
-            <div class="info2">
-              <h3 class="status"><%= project.year %></h3>
-              <h3 class="titolo"><%= project.title %></h3>
+    <% @projects.each do |project| %>
+      <div class="project-box">
+        <%= link_to project_path(project) do %>
+          <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('<%= cl_image_path project.image.key %>')">
+            <div class="regia">
+              <h3 class="categoria">REGIA</h3>
+              <h3 class="contenuto"><%= project.direction %></h3>
+            </div>
+            <div class="distribuzione">
+              <h3 class="categoria">DISTRIBUZIONE</h3>
+              <h3 class="contenuto"><%= project.distribution %></h3>
             </div>
           </div>
-        <% end %>
-
-    <% else %>
-
-          <div class="project-box-right">
-            <%= link_to project_path(project) do %>
-              <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('<%= cl_image_path project.image.key %>')">
-                <div class="regia">
-                  <h3 class="categoria">REGIA</h3>
-                  <h3 class="contenuto"><%= project.direction %></h3>
-                </div>
-                <div class="distribuzione">
-                  <h3 class="categoria">DISTRIBUZIONE</h3>
-                  <h3 class="contenuto"><%= project.distribution %></h3>
-                </div>
-              </div>
-            <div class="info2">
-              <h3 class="status"><%= project.year %></h3>
-              <h3 class="titolo"><%= project.title %></h3>
-            </div>
+          <div class="info2">
+            <h3 class="status"><%= project.year %></h3>
+            <h3 class="titolo"><%= project.title %></h3>
           </div>
         <% end %>
-
-    <% end %>
-
+      </div>
     <% end %>
   </div>
+
+<!-- footer -->
 
 <div class="footer-ce">
   <div class="social">

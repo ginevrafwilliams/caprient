@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_02_19_224616) do
+ActiveRecord::Schema.define(version: 2020_02_21_141953) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -36,6 +36,25 @@ ActiveRecord::Schema.define(version: 2020_02_19_224616) do
     t.index ["key"], name: "index_active_storage_blobs_on_key", unique: true
   end
 
+  create_table "articles", force: :cascade do |t|
+    t.string "title"
+    t.string "category"
+    t.string "date"
+    t.string "writer"
+    t.text "text"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "brandeds", force: :cascade do |t|
+    t.string "title"
+    t.string "year"
+    t.string "direction"
+    t.string "client"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "projects", force: :cascade do |t|
     t.string "title"
     t.string "photo"
@@ -44,6 +63,15 @@ ActiveRecord::Schema.define(version: 2020_02_19_224616) do
     t.string "coproduction"
     t.string "distribution"
     t.text "story"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "reports", force: :cascade do |t|
+    t.string "title"
+    t.string "date"
+    t.string "newspaper"
+    t.string "link"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

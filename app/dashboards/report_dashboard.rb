@@ -1,6 +1,6 @@
 require "administrate/base_dashboard"
 
-class ProjectDashboard < Administrate::BaseDashboard
+class ReportDashboard < Administrate::BaseDashboard
   # ATTRIBUTE_TYPES
   # a hash that describes the type of each of the model's fields.
   #
@@ -10,17 +10,13 @@ class ProjectDashboard < Administrate::BaseDashboard
   ATTRIBUTE_TYPES = {
     id: Field::Number,
     title: Field::String,
-    photo: Field::String,
     image: Field::ActiveStorage.with_options({show_in_index: true}),
-    year: Field::String,
-    direction: Field::String,
-    coproduction: Field::String,
-    distribution: Field::String,
-    story: Field::Text,
+    date: Field::String,
+    newspaper: Field::String,
+    link: Field::String,
     created_at: Field::DateTime,
     updated_at: Field::DateTime,
   }.freeze
-
 
   # COLLECTION_ATTRIBUTES
   # an array of attributes that will be displayed on the model's index page.
@@ -30,7 +26,7 @@ class ProjectDashboard < Administrate::BaseDashboard
   COLLECTION_ATTRIBUTES = %i[
   id
   title
-  year
+  newspaper
   image
   ].freeze
 
@@ -39,12 +35,10 @@ class ProjectDashboard < Administrate::BaseDashboard
   SHOW_PAGE_ATTRIBUTES = %i[
   id
   title
-  year
   image
-  direction
-  coproduction
-  distribution
-  story
+  date
+  newspaper
+  link
   created_at
   updated_at
   ].freeze
@@ -54,12 +48,10 @@ class ProjectDashboard < Administrate::BaseDashboard
   # on the model's form (`new` and `edit`) pages.
   FORM_ATTRIBUTES = %i[
   title
-  year
-  direction
-  coproduction
-  distribution
-  story
   image
+  date
+  newspaper
+  link
   ].freeze
 
   # COLLECTION_FILTERS
@@ -74,10 +66,10 @@ class ProjectDashboard < Administrate::BaseDashboard
   #   }.freeze
   COLLECTION_FILTERS = {}.freeze
 
-  # Overwrite this method to customize how projects are displayed
+  # Overwrite this method to customize how reports are displayed
   # across all pages of the admin dashboard.
   #
-  # def display_resource(project)
-  #   "Project ##{project.id}"
+  # def display_resource(report)
+  #   "Report ##{report.id}"
   # end
 end

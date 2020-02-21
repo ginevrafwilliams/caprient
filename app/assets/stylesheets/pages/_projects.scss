@@ -2,10 +2,6 @@
   margin-bottom: 50px;
 }
 
-.project-box {
-  padding-bottom: 30px;
-}
-
 .project .banner {
   background-size: cover;
   background-position: center;
@@ -23,6 +19,10 @@
 
 .project .banner .distribuzione h3 {
   visibility: hidden;
+}
+
+.project .info2 {
+  padding-bottom: 30px;
 }
 
 .project .info2 h3 {

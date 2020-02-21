@@ -1,6 +1,6 @@
 require "administrate/base_dashboard"
 
-class ProjectDashboard < Administrate::BaseDashboard
+class BrandedDashboard < Administrate::BaseDashboard
   # ATTRIBUTE_TYPES
   # a hash that describes the type of each of the model's fields.
   #
@@ -10,17 +10,13 @@ class ProjectDashboard < Administrate::BaseDashboard
   ATTRIBUTE_TYPES = {
     id: Field::Number,
     title: Field::String,
-    photo: Field::String,
     image: Field::ActiveStorage.with_options({show_in_index: true}),
     year: Field::String,
     direction: Field::String,
-    coproduction: Field::String,
-    distribution: Field::String,
-    story: Field::Text,
+    client: Field::String,
     created_at: Field::DateTime,
     updated_at: Field::DateTime,
   }.freeze
-
 
   # COLLECTION_ATTRIBUTES
   # an array of attributes that will be displayed on the model's index page.
@@ -39,12 +35,10 @@ class ProjectDashboard < Administrate::BaseDashboard
   SHOW_PAGE_ATTRIBUTES = %i[
   id
   title
-  year
   image
+  year
   direction
-  coproduction
-  distribution
-  story
+  client
   created_at
   updated_at
   ].freeze
@@ -54,12 +48,10 @@ class ProjectDashboard < Administrate::BaseDashboard
   # on the model's form (`new` and `edit`) pages.
   FORM_ATTRIBUTES = %i[
   title
+  image
   year
   direction
-  coproduction
-  distribution
-  story
-  image
+  client
   ].freeze
 
   # COLLECTION_FILTERS
@@ -74,10 +66,10 @@ class ProjectDashboard < Administrate::BaseDashboard
   #   }.freeze
   COLLECTION_FILTERS = {}.freeze
 
-  # Overwrite this method to customize how projects are displayed
+  # Overwrite this method to customize how brandeds are displayed
   # across all pages of the admin dashboard.
   #
-  # def display_resource(project)
-  #   "Project ##{project.id}"
+  # def display_resource(branded)
+  #   "Branded ##{branded.id}"
   # end
 end

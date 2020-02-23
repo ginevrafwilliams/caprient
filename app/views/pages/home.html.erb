@@ -54,7 +54,17 @@ const hamburger = document.querySelector('button');
 <div id="carouselExampleControls" class="my-carousel carousel slide" data-ride="carousel">
   <div class="carousel-inner">
 
-    <div class="carousel-item active">
+    <% @projects.each_with_index do |project, index| %>
+      <div class="carousel-item <%= index == 0 ? 'active' : '' %>">
+        <%= cl_image_tag project.image.key, class:"d-block w-100" %>
+        <div class="carousel-caption">
+          <h5><%= project.title.upcase %></h5>
+          <p><%= project.coproduction %> <%= project.coproduction2 %> <%= project.coproduction3 %> <%= project.coproduction4 %><%= project.coproduction5 %></p>
+        </div>
+      </div>
+    <% end %>
+
+<!--     <div class="carousel-item active">
       <img class="d-block w-100" src="<%= image_path("totti_pietro.jpg") %>" alt="First slide">
       <div class="carousel-caption">
         <h5>IL DOCUFILM SU FRANCESCO TOTTI</h5>
@@ -68,7 +78,7 @@ const hamburger = document.querySelector('button');
         <h5>LA SERIE TV SU FRANCESCO TOTTI</h5>
         <p>WILDSIDE, CAPRI ENTERTAINMENT</p>
       </div>
-    </div>
+    </div> -->
 
   </div>
 

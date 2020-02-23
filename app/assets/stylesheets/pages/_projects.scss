@@ -42,13 +42,15 @@
   }
 
   .project .info2 {
-    padding-bottom: 60px;
+    padding-bottom: 100px;
+    // padding-top: 20px;
   }
 
-  // .project-box-right {
-  //   width: 80%;
-  //   margin-left: auto;
-  //   padding-right: 40px;
+  // .project-container {
+  //   height: 400px;
+  //   width: 100%;
+  //   overflow: hidden;
+  //   position: relative;
   // }
 
   .project .banner {
@@ -56,10 +58,15 @@
     width: 100%;
     margin: 0px;
     margin-bottom: 20px;
+    // background-position: center;
+    // background-size: cover;
+    // background-repeat: no-repeat;
+    // transition: all 1s;
   }
 
-  .project .banner:hover img {
-    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7))
+  .banner:hover img {
+    // transform: scale(1.2);
+    opacity: 0.7;
   }
 
   .project a {

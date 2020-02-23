@@ -15,6 +15,10 @@ class ProjectDashboard < Administrate::BaseDashboard
     year: Field::String,
     direction: Field::String,
     coproduction: Field::String,
+    coproduction2: Field::String,
+    coproduction3: Field::String,
+    coproduction4: Field::String,
+    coproduction5: Field::String,
     distribution: Field::String,
     story: Field::Text,
     created_at: Field::DateTime,
@@ -43,6 +47,10 @@ class ProjectDashboard < Administrate::BaseDashboard
   image
   direction
   coproduction
+  coproduction2
+  coproduction3
+  coproduction4
+  coproduction5
   distribution
   story
   created_at
@@ -57,6 +65,10 @@ class ProjectDashboard < Administrate::BaseDashboard
   year
   direction
   coproduction
+  coproduction2
+  coproduction3
+  coproduction4
+  coproduction5
   distribution
   story
   image

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_02_21_141953) do
+ActiveRecord::Schema.define(version: 2020_02_23_203758) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -65,6 +65,10 @@ ActiveRecord::Schema.define(version: 2020_02_21_141953) do
     t.text "story"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "coproduction2"
+    t.string "coproduction3"
+    t.string "coproduction4"
+    t.string "coproduction5"
   end
 
   create_table "reports", force: :cascade do |t|

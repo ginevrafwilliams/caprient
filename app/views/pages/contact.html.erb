@@ -7,7 +7,7 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav ml-auto">
       <li class="nav-item">
-        <a class="nav-link" href="/about"> CHI SIAMO <span class="sr-only">(current)</span></a>
+        <%= link_to "CHI SIAMO", about_path, class: "nav-link" %>
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -15,7 +15,7 @@
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
           <a class="dropdown-item" href="/projects">FILM E TV</a>
-          <a class="dropdown-item" href="/brandeds">BRANDED</a>
+          <a class="dropdown-item" href="#/brandeds">BRANDED</a>
         </div>
       </li>
       <li class="nav-item">
@@ -25,11 +25,31 @@
         <a class="nav-link" href="/reports">NEWS</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/contact">CONTATTI</a>
+        <%= link_to "CONTATTI", contact_path, class: "nav-link" %>
       </li>
     </ul>
   </div>
 </nav>
+
+<script>
+
+const hamburger = document.querySelector('button');
+  hamburger.addEventListener("click", (event) => {
+    const navbar = document.querySelector('.navbar-trn');
+    const text = document.querySelectorAll('.nav-item');
+    navbar.classList.toggle("my-style");
+    if (window.getComputedStyle(navbar).getPropertyValue("background-color") === "rgba(0, 0, 0, 0)" ) {
+        text.forEach((element) => {
+            element.classList.add("my-font");
+          });
+    } else {
+        text.forEach((element) => {
+            element.classList.remove("my-font");
+          });
+    };
+  });
+
+</script>
 
   <div class="box-map">
       <div class="box-contact">
@@ -53,19 +73,3 @@
         <p class="small">L’autore verrà ricontattato solo se interessati, non commenteremo un esito negativo.</p>
       </div>
   </div>
-
-<!--   <div class="footer-ce">
-  <div class="social">
-    <p>
-      <a href="https://m.facebook.com/caprientertainementsrl/"><i class="fab fa-facebook-f"></i></a>
-      <a href="https://www.instagram.com/caprientertainment/"><i class="fab fa-instagram"></i></a>
-      <a href="https://www.linkedin.com/company/caprientertainment/"><i class="fab fa-linkedin-in"></i></a>
-    </p>
-  </div>
-  <div class="info">
-    <p>© 2019 - Capri Entertainment S.R.L.</p>
-    <p>Via Margutta 54, 00187 Roma</p>
-    <p>P.IVA/C.F. 15003851001</p>
-    <p class="ppolicy"><a href="">Privacy Policy</a></p>
-  </div>
-</div> -->

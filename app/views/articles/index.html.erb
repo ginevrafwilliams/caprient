@@ -35,14 +35,18 @@
 
 <!-- articles -->
 
+
   <div class="article">
     <% @articles.each_with_index do |article, index| %>
       <% if index.even? %>
         <%= link_to article_path(article) do %>
           <div class="article-box">
-            <div class="banner">
-              <%= cl_image_tag article.image.key %>
+
+          <div class="article-container">
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0)), url('<%= cl_image_path article.image.key %>')">
             </div>
+          </div>
+
             <div class="article-info">
               <h3 class="categoria"><%= article.category.upcase %></h3>
               <h3 class="titolo"><%= article.title %></h3>
@@ -52,9 +56,12 @@
       <% else %>
         <%= link_to article_path(article) do %>
           <div class="article-box-right">
-            <div class="banner">
-              <%= cl_image_tag article.image.key %>
+
+          <div class="article-container">
+            <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0)), url('<%= cl_image_path article.image.key %>')">
             </div>
+          </div>
+
             <div class="article-info">
               <h3 class="categoria"><%= article.category %></h3>
               <h3 class="titolo"><%= article.title %></h3>

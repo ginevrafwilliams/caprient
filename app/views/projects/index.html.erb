@@ -35,6 +35,8 @@
 
 <!-- projects -->
 
+<!-- <div class="title"><h1>FILM E TV</h1></div> -->
+
   <div class="project">
     <% @projects.each do |project| %>
       <div class="project-box">
@@ -42,14 +44,14 @@
 
         <div class="project-container">
           <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('<%= cl_image_path project.image.key %>')">
-              <div class="regia">
+<!--               <div class="regia">
                 <h3 class="categoria">REGIA</h3>
-                <h3 class="contenuto"><%= project.direction %></h3>
-              </div>
-              <div class="distribuzione">
+                <h3 class="contenuto"><%= project.title %></h3>
+              </div> -->
+<!--               <div class="distribuzione">
                 <h3 class="categoria">DISTRIBUZIONE</h3>
                 <h3 class="contenuto"><%= project.distribution %></h3>
-              </div>
+              </div> -->
           </div>
         </div>
 

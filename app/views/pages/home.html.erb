@@ -59,7 +59,7 @@ const hamburger = document.querySelector('button');
         <%= cl_image_tag project.image.key, class:"d-block w-100" %>
         <div class="carousel-caption">
           <h5><%= project.title.upcase %></h5>
-          <p><%= project.coproduction %> <%= project.coproduction2 %> <%= project.coproduction3 %> <%= project.coproduction4 %><%= project.coproduction5 %></p>
+          <p><%= project.coproduction %>, <%= project.coproduction2 %></p>
         </div>
       </div>
     <% end %>

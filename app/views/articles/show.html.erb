@@ -52,13 +52,15 @@
     <div class="article-other">
       <% @articles.each do |article| %>
         <div class="test">
-          <div class="article-container-other">
-            <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0)), url('<%= cl_image_path article.image.key %>')">
+          <%= link_to article_path(article) do %>
+            <div class="article-container-other">
+              <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0)), url('<%= cl_image_path article.image.key %>')">
+              </div>
             </div>
-          </div>
-          <div class="article-title-other">
-            <h3><%= article.title %></h3>
-          </div>
+            <div class="article-title-other">
+              <h3><%= article.title %></h3>
+            </div>
+          <% end %>
         </div>
       <% end %>
     </div>

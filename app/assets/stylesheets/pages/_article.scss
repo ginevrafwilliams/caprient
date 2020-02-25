@@ -15,7 +15,7 @@
 .article-text .article-details {
   font-weight: lighter;
   opacity: 0.5;
-  font-size: 18px;
+  font-size: 17px;
 }
 
 .article-text .article-title {
@@ -27,6 +27,7 @@
   font-size: 17px;
   text-align: justify;
   white-space: pre-line;
+  font-weight: lighter;
 }
 .article-extra .article-other .banner {
   width: 100%;
@@ -75,5 +76,42 @@
 @media (min-width: 900px) {
   .banner-article img {
     height: 455px;
+  }
+
+  // .article-extra {
+  //   margin-left: 100px;
+  //   margin-right: 100px;
+  // }
+
+  .article-text {
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 60px;
+  }
+
+  .article-text .article-details {
+    font-size: 20px;
+  }
+
+  .article-text .article-title {
+    font-size: 25px;
+  }
+
+  .article-text p {
+    font-size: 20px;
+  }
+
+  .article-extra-text {
+    font-size: 20px;
+    margin-left: 30px;
+  }
+
+  .article-other {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .test {
+    width: 350px;
   }
 }

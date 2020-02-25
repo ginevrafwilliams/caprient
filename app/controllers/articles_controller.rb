@@ -5,5 +5,6 @@ class ArticlesController < ApplicationController
 
   def show
     @article = Article.find(params[:id])
+    @articles = Article.limit(3).order("RANDOM()").where.not(id: @article)
   end
 end

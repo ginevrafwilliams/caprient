@@ -1,2 +1,81 @@
-<h1>Articles#show</h1>
-<p>Find me in app/views/articles/show.html.erb</p>
+<!-- navigation bar -->
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="/"><img src="<%= image_path("logo2.png")%>" alt=""></a>
+  <button class="navbar-dark navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" class="first" href="/about"> CHI SIAMO <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          LAVORI
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="/projects">FILM E TV</a>
+          <a class="dropdown-item" href="/brandeds">BRANDED</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/articles">NOTES</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/reports">NEWS</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/contact">CONTATTI</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<!-- article -->
+
+<div class="banner-article">
+  <%= cl_image_tag @article.image.key %>
+</div>
+
+<div class="article-text">
+  <h3 class="article-details"><%= @article.date.upcase %> - DI <%= @article.writer.upcase %></h3>
+  <h3 class="article-title"><%= @article.title %></h3>
+  <p><%= @article.text %></p>
+</div>
+
+<!-- potrebbe anche piacerti -->
+
+<div class="article-extra">
+  <h3 class="article-extra-text">TI POTREBBE PIACERE ANCHE...</h3>
+  <div class="article-other">
+    <% @articles.each do |article| %>
+      <div class="article-container-other">
+        <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0)), url('<%= cl_image_path article.image.key %>')">
+        </div>
+      </div>
+      <div class="article-title-other">
+        <h3><%= article.title %></h3>
+      </div>
+    <% end %>
+  </div>
+</div>
+
+<!-- footer -->
+
+<div class="footer-ce">
+  <div class="social">
+    <p>
+      <a href="https://m.facebook.com/caprientertainementsrl/"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://www.instagram.com/caprientertainment/"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.linkedin.com/company/caprientertainment/"><i class="fab fa-linkedin-in"></i></a>
+    </p>
+  </div>
+  <div class="info">
+    <p>© 2019 - Capri Entertainment S.R.L.</p>
+    <p>Via Margutta 54, 00187 Roma</p>
+    <p>P.IVA/C.F. 15003851001</p>
+    <p class="ppolicy"><a href="">Privacy Policy</a></p>
+  </div>
+</div>

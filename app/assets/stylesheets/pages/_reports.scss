@@ -1,0 +1,108 @@
+.report {
+  margin-top: 30px;
+}
+
+.report .banner {
+  width: 100%;
+  margin-bottom: 15px;
+  height: 250px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: all 1s;
+}
+
+.report-info {
+  color: white;
+  margin-left: 30px;
+  margin-right: 30px;
+  padding-bottom: 30px;
+}
+
+.report .report-info .data-rivista {
+  font-weight: lighter;
+  font-size: 17px;
+  opacity: 0.5;
+}
+
+.report .report-info .titolo {
+  font-size: 21px;
+}
+
+@media (min-width: 1000px) {
+  .report .banner {
+    height: 100%;
+    width: 100%;
+    border-radius: 4px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: all 1s;
+  }
+
+  .report a {
+    text-decoration: none;
+  }
+
+  .report .report:hover {
+    transform: scale(1.2);
+    opacity: 0.7;
+  }
+
+  .report-box {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    margin-bottom: 60px;
+  }
+
+  .report .report-box .report-container {
+    width: 50%;
+    overflow: hidden;
+    position: relative;
+    height: 400px;
+    margin-top: 30px;
+    margin-left: 70px;
+  }
+
+  .report-info {
+    margin-top: 30px;
+    margin-left: 0;
+    padding-right: 30px;
+    margin-top: 40px;
+    width: 360px;
+  }
+
+  .report .report-info .titolo {
+    font-size: 25px;
+  }
+
+  .report .report-info .categoria {
+    margin-bottom: 20px;
+  }
+
+  .report .report-box-right {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    margin-bottom: 60px;
+    flex-direction: row-reverse;
+  }
+
+  .report .report-box-right .report-container {
+    width: 50%;
+    margin-right: 30px;
+    overflow: hidden;
+    height: 400px;
+    margin-top: 30px;
+  }
+
+  .report .report-box-right {
+    margin-right: 70px;
+  }
+
+  .report .report-box-right .report-info {
+    margin-left: 110px;
+  }
+
+}

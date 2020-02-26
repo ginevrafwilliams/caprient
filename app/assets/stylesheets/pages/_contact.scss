@@ -20,7 +20,7 @@
   width: 80%;
   margin: 0 auto;
   text-align: center;
-  padding-top: 35px;
+  margin-top: 30px;
 }
 
 .contact-box2 {
@@ -28,20 +28,20 @@
   width: 80%;
   margin: 0 auto;
   text-align: center;
-  padding-top: 40px;
+  margin-top: 30px;
 }
 
-.contact-box h1 {
+.contact-box h3 {
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
-  font-size: 25px;
+  font-size: 21px;
   font-weight: bold;
   padding-bottom: 20px;
   margin-bottom: 0;
 }
 
-.contact-box2 h1 {
+.contact-box2 h3 {
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
-  font-size: 25px;
+  font-size: 21px;
   font-weight: bold;
   padding-bottom: 20px;
   margin-bottom: 0;
@@ -57,14 +57,14 @@
 
 .contact-box .contact-address p {
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
-  font-size: 16px;
+  font-size: 17px;
   font-weight: normal;
   margin-bottom: 0;
 }
 
 .contact-box2 .contact-address p {
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
-  font-size: 16px;
+  font-size: 17px;
   font-weight: normal;
   margin-bottom: 0;
 }
@@ -110,11 +110,11 @@ a:hover .fa-linkedin-in:before {
 }
 
 @media (min-width: 375px) {
-  .contact-box h1 {
+  .contact-box h3 {
     padding-bottom: 30px;
   }
 
-  .contact-box2 h1 {
+  .contact-box2 h3 {
     padding-bottom: 30px;
   }
 
@@ -137,15 +137,19 @@ a:hover .fa-linkedin-in:before {
 
 @media (min-width: 400px) {
   .contact-box2 {
-    padding-top: 60px;
+    margin-top: 60px;
+  }
+
+  .contact-box {
+    margin-top: 60px;
   }
 
   .contact-box .contact-address p {
-    font-size: 22px;
+    font-size: 20px;
   }
 
   .contact-box2 .contact-address p {
-    font-size: 22px;
+    font-size: 20px;
   }
 
   .fa-instagram:before {
@@ -161,29 +165,41 @@ a:hover .fa-linkedin-in:before {
   }
 
   .contact-box2 .contact-info p {
-    font-size: 14px;
+    font-size: 15px;
+  }
+
+  .contact-box h3 {
+    font-size: 25px;
+  }
+
+  .contact-box2 h3 {
+    font-size: 25px;
   }
 }
 
 @media (min-width: 768px) {
   .contact-box {
-    padding-top: 35px;
+    margin-top: 60px;
   }
 
-  .contact-box h1 {
-    font-size: 30px;
+  .contact-box2 {
+    margin-top: 60px;
+  }
+
+  .contact-box h3 {
+    font-size: 25px;
   }
 
   .contact-box .contact-address p {
-    font-size: 25px;
+    font-size: 20px;
   }
 
-  .contact-box2 h1 {
-    font-size: 30px;
+  .contact-box2 h3 {
+    font-size: 25px;
   }
 
   .contact-box2 .contact-address p {
-    font-size: 25px;
+    font-size: 20px;
   }
 
   .contact-info p {

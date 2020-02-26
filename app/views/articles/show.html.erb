@@ -40,7 +40,7 @@
 </div>
 
 <div class="article-text">
-  <h3 class="article-details"><%= @article.date.upcase %> - DI <%= @article.writer.upcase %></h3>
+  <p class="article-details"><%= @article.date.upcase %> - DI <%= @article.writer.upcase %></p>
   <h3 class="article-title"><%= @article.title %></h3>
   <p><%= @article.text %></p>
 </div>
@@ -48,7 +48,7 @@
 <!-- potrebbe anche piacerti -->
 
 <div class="article-extra">
-  <h3 class="article-extra-text">TI POTREBBE INTERESSARE ANCHE...</h3>
+  <p class="article-extra-text">TI POTREBBE INTERESSARE ANCHE...</p>
     <div class="article-other">
       <% @articles.each do |article| %>
         <div class="test">

@@ -1,6 +1,6 @@
 .footer-ce {
   background-color: #001525;
-  padding-top: 20px;
+  // padding-top: 20px;
 }
 
 .info {
@@ -8,16 +8,19 @@
   margin-right: 30px;
   padding-bottom: 20px;
   font-size: 10px;
+
 }
 
 .info p {
   color: white;
   margin-bottom: 0px;
+  font-weight: lighter;
 }
 
 .info p a {
   color: white;
   opacity: 0.5;
+  text-decoration: none;
 }
 
 .info p a:hover {
@@ -61,6 +64,7 @@
   .info {
     margin-top: 10px;
     font-size: 12px;
+    text-align: right;
   }
 
   .info p {

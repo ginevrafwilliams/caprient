@@ -1,5 +1,9 @@
 .footer-ce-trn {
-  background-color: #001525;
+  background-color: transparent;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  z-index: 999;
 }
 
 .my-footer {
@@ -77,7 +81,7 @@
   opacity: 1;
 }
 
-.info p a:hover {
+.footer-ce-trn .info p a:hover {
   color: white;
   opacity: 1;
   text-decoration: none;
@@ -116,4 +120,25 @@
   .footer-ce-trn .social .fa-linkedin-in:before {
     font-size: 30px;
   }
+
+  .footer-ce-trn a:hover .fa-facebook-f:before {
+  color: white;
+  opacity: 1;
+}
+
+.footer-ce-trn a:hover .fa-instagram:before  {
+  color: white;
+  opacity: 1;
+}
+
+.footer-ce-trn a:hover .fa-linkedin-in:before {
+  color: white;
+  opacity: 1;
+}
+
+.footer-ce-trn .info p a:hover {
+  color: white;
+  opacity: 1;
+  text-decoration: none;
+}
 }

@@ -35,35 +35,37 @@
 
 <!-- reports -->
 
-
   <div class="report">
     <% @reports.each_with_index do |report, index| %>
 
       <% if index.even? %>
 
+        <%= link_to report.link, target: :_blank do %>
           <div class="report-box">
-            <div class="report-container">
-              <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0)), url('<%= cl_image_path report.image.key %>')">
+              <div class="report-container">
+                <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0)), url('<%= cl_image_path report.image.key %>')">
+                </div>
               </div>
-            </div>
-            <div class="report-info">
-              <p class="data-rivista"><%= report.date.upcase %> - <%= report.newspaper.upcase %></p>
-              <h3 class="titolo"><%= report.title %></h3>
-            </div>
+              <div class="report-info">
+                <p class="data-rivista"><%= report.date.upcase %><br><%= report.newspaper.upcase %></p>
+                <h3 class="titolo"><%= report.title %></h3>
+              </div>
           </div>
+        <% end %>
 
       <% else %>
-
+        <%= link_to report.link, target: :_blank do %>
           <div class="report-box-right">
             <div class="report-container">
               <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0)), url('<%= cl_image_path report.image.key %>')">
               </div>
             </div>
             <div class="report-info">
-              <p class="data-rivista"><%= report.date.upcase %> - <%= report.newspaper.upcase %></p>
+              <p class="data-rivista"><%= report.date.upcase %><br><%= report.newspaper.upcase %></p>
               <h3 class="titolo"><%= report.title %></h3>
             </div>
           </div>
+        <% end %>
 
       <% end %>
     <% end %>

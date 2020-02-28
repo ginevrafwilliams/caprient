@@ -31,6 +31,7 @@
   </div>
 </nav>
 
+
 <script>
 
 const hamburger = document.querySelector('button');
@@ -55,13 +56,15 @@ const hamburger = document.querySelector('button');
   <div class="carousel-inner">
 
     <% @projects.each_with_index do |project, index| %>
-      <div class="carousel-item <%= index == 0 ? 'active' : '' %>">
-        <%= cl_image_tag project.image.key, class:"d-block w-100" %>
-        <div class="carousel-caption">
-          <h5><%= project.title.upcase %></h5>
-          <p><%= project.coproduction %>, <%= project.coproduction2 %></p>
+        <div class="carousel-item <%= index == 0 ? 'active' : '' %>">
+          <%= cl_image_tag project.image.key, class:"d-block w-100" %>
+          <%= link_to project_path(project) do %>
+            <div class="carousel-caption">
+              <h5><%= project.title.upcase %></h5>
+              <p><%= project.coproduction %>, <%= project.coproduction2 %></p>
+            </div>
+          <% end %>
         </div>
-      </div>
     <% end %>
 
   </div>

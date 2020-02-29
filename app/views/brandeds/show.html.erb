@@ -38,7 +38,7 @@
 <!-- branded -->
 
 <div class="banner-branded">
-  <iframe width="100%" height="400" src='https://www.youtube.com/embed/<%= @branded.youtube %>?rel=0&autoplay=<%= params[:autoplay] || 0 %>' frameborder='0' allowfullscreen></iframe>
+  <iframe src="https://player.vimeo.com/video/<%= @branded.youtube %>?autoplay=1&loop=1&background=1" width="100vw" height="500px" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 </div>
 
 <div class="branded-info">
@@ -63,27 +63,30 @@
 <div class="branded-extra">
   <% if @branded.youtube2 != "" %>
     <div class="video">
-      <iframe width="100%" height="250" src='https://www.youtube.com/embed/<%= @branded.youtube2 %>?rel=0&autoplay=<%= params[:autoplay] || 0 %>' frameborder='0' allowfullscreen></iframe>
+      <iframe src="https://player.vimeo.com/video/<%= @branded.youtube2 %>" width="100%" height="250" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
     </div>
   <% end %>
   <% if @branded.youtube3 != "" %>
     <div class="video">
-      <iframe width="100%" height="250" src='https://www.youtube.com/embed/<%= @branded.youtube3 %>?rel=0&autoplay=<%= params[:autoplay] || 0 %>' frameborder='0' allowfullscreen></iframe>
+      <iframe src="https://player.vimeo.com/video/<%= @branded.youtube3 %>" width="100%" height="250" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
     </div>
   <% end %>
+</div>
+
+<div class="branded-extra">
   <% if @branded.youtube4 != "" %>
     <div class="video">
-      <iframe width="100%" height="250" src='https://www.youtube.com/embed/<%= @branded.youtube4 %>?rel=0&autoplay=<%= params[:autoplay] || 0 %>' frameborder='0' allowfullscreen></iframe>
+      <iframe src="https://player.vimeo.com/video/<%= @branded.youtube4 %>" width="100%" height="250" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
     </div>
   <% end %>
   <% if @branded.youtube5 != "" %>
     <div class="video">
-      <iframe width="100%" height="250" src='https://www.youtube.com/embed/<%= @branded.youtube5 %>?rel=0&autoplay=<%= params[:autoplay] || 0 %>' frameborder='0' allowfullscreen></iframe>
+      <iframe src="https://player.vimeo.com/video/<%= @branded.youtube5 %>" width="100%" height="250" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
     </div>
   <% end %>
   <% if @branded.youtube6 != "" %>
     <div class="video">
-        <iframe width="100%" height="250" src='https://www.youtube.com/embed/<%= @branded.youtube6 %>?rel=0&autoplay=<%= params[:autoplay] || 0 %>' frameborder='0' allowfullscreen></iframe>
+      <iframe src="https://player.vimeo.com/video/<%= @branded.youtube6 %>" width="100%" height="250" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
     </div>
   <% end %>
 </div>

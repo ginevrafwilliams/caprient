@@ -1,2 +1,108 @@
-<h1>Brandeds#show</h1>
-<p>Find me in app/views/brandeds/show.html.erb</p>
+<div class="superbox">
+
+<!-- navigation bar -->
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="/"><img src="<%= image_path("logo2.png")%>" alt=""></a>
+  <button class="navbar-dark navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" class="first" href="/about"> CHI SIAMO <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          LAVORI
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="/projects">FILM E TV</a>
+          <a class="dropdown-item" href="/brandeds">BRANDED</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/articles">NOTES</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/reports">NEWS</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/contact">CONTATTI</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<!-- branded -->
+
+<div class="banner-branded">
+  <iframe width="100%" height="400" src='https://www.youtube.com/embed/<%= @branded.youtube %>?rel=0&autoplay=<%= params[:autoplay] || 0 %>' frameborder='0' allowfullscreen></iframe>
+</div>
+
+<div class="branded-info">
+  <div class="titolo">
+    <p class="categoria">TITOLO</p>
+    <p class="contenuto"><%= @branded.title %></p>
+  </div>
+  <div class="regia">
+    <p class="categoria">REGIA</p>
+    <p class="contenuto"><%= @branded.direction %></p>
+  </div>
+  <div class="anno">
+    <p class="categoria">ANNO</p>
+    <p class="contenuto"><%= @branded.year %></p>
+  </div>
+  <div class="cliente">
+    <p class="categoria">CLIENTE</p>
+    <p class="contenuto"><%= @branded.client %></p>
+  </div>
+</div>
+
+<div class="branded-extra">
+  <% if @branded.youtube2 != "" %>
+    <div class="video">
+      <iframe width="100%" height="250" src='https://www.youtube.com/embed/<%= @branded.youtube2 %>?rel=0&autoplay=<%= params[:autoplay] || 0 %>' frameborder='0' allowfullscreen></iframe>
+    </div>
+  <% end %>
+  <% if @branded.youtube3 != "" %>
+    <div class="video">
+      <iframe width="100%" height="250" src='https://www.youtube.com/embed/<%= @branded.youtube3 %>?rel=0&autoplay=<%= params[:autoplay] || 0 %>' frameborder='0' allowfullscreen></iframe>
+    </div>
+  <% end %>
+  <% if @branded.youtube4 != "" %>
+    <div class="video">
+      <iframe width="100%" height="250" src='https://www.youtube.com/embed/<%= @branded.youtube4 %>?rel=0&autoplay=<%= params[:autoplay] || 0 %>' frameborder='0' allowfullscreen></iframe>
+    </div>
+  <% end %>
+  <% if @branded.youtube5 != "" %>
+    <div class="video">
+      <iframe width="100%" height="250" src='https://www.youtube.com/embed/<%= @branded.youtube5 %>?rel=0&autoplay=<%= params[:autoplay] || 0 %>' frameborder='0' allowfullscreen></iframe>
+    </div>
+  <% end %>
+  <% if @branded.youtube6 != "" %>
+    <div class="video">
+        <iframe width="100%" height="250" src='https://www.youtube.com/embed/<%= @branded.youtube6 %>?rel=0&autoplay=<%= params[:autoplay] || 0 %>' frameborder='0' allowfullscreen></iframe>
+    </div>
+  <% end %>
+</div>
+
+<!-- footer -->
+
+<div class="footer-ce">
+  <div class="social">
+    <p>
+      <a href="https://m.facebook.com/caprientertainementsrl/"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://www.instagram.com/caprientertainment/"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.linkedin.com/company/caprientertainment/"><i class="fab fa-linkedin-in"></i></a>
+    </p>
+  </div>
+  <div class="info">
+    <p>© 2019 - Capri Entertainment S.R.L. Via Margutta 54, 00187 Roma</p>
+    <p>P.IVA/C.F. 15003851001</p>
+    <p class="ppolicy"><a href="">Privacy Policy</a></p>
+  </div>
+</div>
+
+</div>

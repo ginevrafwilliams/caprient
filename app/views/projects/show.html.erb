@@ -1,3 +1,5 @@
+<div class="superbox">
+
 <!-- navigation bar -->
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -39,6 +41,10 @@
   <%= cl_image_tag @project.image.key %>
 </div>
 <div class="project-info">
+  <div class="titolo">
+    <p class="categoria">TITOLO</p>
+    <p class="contenuto"><%= @project.title %></p>
+  </div>
   <div class="regia">
     <p class="categoria">REGIA</p>
     <p class="contenuto"><%= @project.direction %></p>
@@ -58,7 +64,7 @@
 </div>
 
 <div class="project-story">
-  <p class="categoria"><%= @project.title.upcase %></p>
+  <p class="categoria"> LA STORIA </p>
   <p class="contenuto"><%= @project.story %></p>
 </div>
 
@@ -78,5 +84,7 @@
     <p>P.IVA/C.F. 15003851001</p>
     <p class="ppolicy"><a href="">Privacy Policy</a></p>
   </div>
+</div>
+
 </div>
 

@@ -1,8 +1,8 @@
-.project {
+.branded {
   margin-top: 30px;
 }
 
-.project .banner {
+.branded .banner {
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -12,45 +12,45 @@
   box-shadow: 0 16px 40px rgba(0,0,0,0.12);
 }
 
-.project .info2 h3 {
+.branded .info2 h3 {
   color: white;
 }
 
-.project .info2 .status {
+.branded .info2 .status {
   font-weight: lighter;
   font-size: 17px;
   opacity: 0.5;
   color: white;
 }
 
-.project .info2 .titolo {
+.branded .info2 .cliente {
   font-size: 21px;
 }
 
-.project .info2 {
+.branded .info2 {
   margin-bottom: 30px;
   margin-left: 30px;
   margin-right: 30px;
 }
 
 @media (min-width: 800px) {
-  .project {
+  .branded {
     width: 100%;
   }
 
-  .project .info2 {
+  .branded .info2 {
     margin-bottom: 60px;
     margin-top: 20px;
   }
 
-  .project-container {
+  .branded-container {
     height: 400px;
     width: 100%;
     overflow: hidden;
     position: relative;
   }
 
-  .project .banner {
+  .branded .banner {
     height: 100%;
     width: 100%;
     margin: 0px;
@@ -61,16 +61,16 @@
     transition: all 1s;
   }
 
-  .project .banner:hover  {
+  .branded .banner:hover  {
     transform: scale(1.2);
     opacity: 0.7;
   }
 
-  .project a {
+  .branded a {
     text-decoration: none;
   }
 
-  .project .info2 .titolo {
+  .branded .info2 .cliente {
   font-size: 25px;
   }
 }

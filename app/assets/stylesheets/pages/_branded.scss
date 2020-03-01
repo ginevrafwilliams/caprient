@@ -8,14 +8,11 @@
   height: 100%;
 }
 
-// .video iframe {
-//   width: 100%;
-//   height: 200px;
-// }
-
-.branded-extra {
+.branded-more {
   margin-left: 30px;
   margin-right: 30px;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .branded-info {
@@ -55,9 +52,17 @@
   margin-bottom: 30px;
 }
 
-// .vp-center {
-//   align-items: none;
-// }
+.branded-info {
+  border-bottom: 1px solid white;
+}
+
+.branded-extra-text {
+  font-weight: lighter;
+  opacity: 0.5;
+  font-size: 18px;
+  color: white;
+  margin-bottom: 10px;
+}
 
 
 @media (min-width: 900px) {

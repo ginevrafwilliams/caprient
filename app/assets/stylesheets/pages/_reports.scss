@@ -23,6 +23,7 @@
   font-weight: lighter;
   font-size: 17px;
   opacity: 0.5;
+  margin-bottom: 0;
 }
 
 .report .report-info .titolo {
@@ -62,7 +63,7 @@
     position: relative;
     height: 400px;
     margin-top: 30px;
-    margin-left: 70px;
+    margin-left: 30px;
   }
 
   .report-info {
@@ -91,18 +92,18 @@
 
   .report .report-box-right .report-container {
     width: 50%;
-    margin-right: 30px;
+    margin-right: 70px;
     overflow: hidden;
     height: 400px;
     margin-top: 30px;
   }
 
-  .report .report-box-right {
-    margin-right: 70px;
-  }
+  // .report .report-box-right {
+  //   margin-right: 70px;
+  // }
 
   .report .report-box-right .report-info {
-    margin-left: 110px;
+    margin-left: 60px;
   }
 
 }

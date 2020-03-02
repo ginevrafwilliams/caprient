@@ -56,6 +56,18 @@
   padding-bottom: 20px;
 }
 
+.contact-box2 a {
+  color: white;
+  opacity: 0.5;
+  font-size: 25px;
+}
+
+.contact-box2 a:hover {
+  color: white;
+  opacity: 1;
+  text-decoration: none;
+}
+
 .contact-box .contact-address p {
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
   font-size: 17px;
@@ -72,6 +84,7 @@
 
 .contact-box2 .contact-info p {
   font-size: 12px;
+  padding-top: 30px;
 }
 
 // social
@@ -154,15 +167,15 @@ a:hover .fa-linkedin-in:before {
   }
 
   .fa-instagram:before {
-    font-size: 30px;
+    font-size: 25px;
   }
 
   .fa-linkedin-in:before {
-    font-size: 30px;
+    font-size: 25px;
   }
 
   .fa-facebook-f:before {
-    font-size: 30px;
+    font-size: 25px;
   }
 
   .contact-box2 .contact-info p {

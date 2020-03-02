@@ -74,9 +74,26 @@
   color: white;
 }
 
+@media (min-width: 768px) {
+  .article-text {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+
+  .article-extra {
+    margin-right: 100px;
+    margin-left: 100px;
+  }
+
+}
+
 @media (min-width: 1030px) {
   .banner-article img {
     height: 400px;
+  }
+
+  .article-container-other {
+    margin-right: 10px;
   }
 
   .article-text {
@@ -101,11 +118,13 @@
   .article-extra {
     margin-top: 60px;
     margin-bottom: 60px;
+    margin-left: 30px;
+    margin-right: 30px;
   }
 
   .article-extra-text {
     font-size: 20px;
-    margin-left: 30px;
+    margin-left: 20px;
   }
 
   .article-other {

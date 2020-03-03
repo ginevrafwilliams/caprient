@@ -7,7 +7,7 @@
 .branded-more {
   margin-left: 30px;
   margin-right: 30px;
-  margin-top: 30px;
+  padding-top: 30px;
   margin-bottom: 30px;
 }
 
@@ -16,6 +16,7 @@
   margin-left: 30px;
   margin-right: 30px;
   margin-top: 30px;
+  padding-bottom: 30px;
 }
 
 .branded-info .categoria {
@@ -48,6 +49,10 @@
   margin-bottom: 30px;
 }
 
+.branded-info .creativita {
+  margin-bottom: 0;
+}
+
 .branded-info {
   border-bottom: 1px solid white;
 }
@@ -75,6 +80,24 @@
     margin-bottom: 30px;
   }
 
+@media (min-width: 768px) {
+    .branded-info {
+      margin-top: 0;
+      margin-bottom: 0;
+      margin-top: 60px;
+      padding-bottom: 60px;
+      margin-left: 100px;
+      margin-right: 100px;
+    }
+
+      .branded-more {
+        margin-left: 100px;
+        margin-right: 100px;
+        padding-top: 60px;
+        margin-bottom: 60px;
+      }
+}
+
 @media (min-width: 1024px) {
     .video {
       height: 550px;
@@ -88,19 +111,7 @@
     // margin-bottom: 30px;
   }
 
-  .branded-info .titolo {
-    margin-bottom: 0px;
-  }
-
-  .branded-info .regia {
-    margin-bottom: 0px;
-  }
-
-  .branded-info .anno {
-    margin-bottom: 0px;
-  }
-
-  .branded-info .cliente {
+  .branded-info .creativita {
     margin-bottom: 0px;
   }
 
@@ -126,13 +137,11 @@
   .branded-more {
     margin-left: 100px;
     margin-right: 100px;
-    margin-top: 60px;
+    padding-top: 60px;
     margin-bottom: 60px;
   }
 
   .branded-info {
-    display: flex;
-    justify-content: space-between;
     margin-top: 0;
     margin-bottom: 0;
     margin-top: 60px;
@@ -150,20 +159,7 @@
   .branded-info .contenuto {
     font-size: 20px;
   }
-
-  .branded-info .regia {
-    margin-bottom: 0px;
-  }
-
-  .branded-info .anno {
-    margin-bottom: 0px;
-  }
-
-  .branded-info .cliente {
-    margin-bottom: 0px;
-  }
 }
-
 
 @media (min-width: 1030px) {
 
@@ -217,7 +213,7 @@
   .branded-more {
     margin-left: 100px;
     margin-right: 100px;
-    margin-top: 60px;
+    padding-top: 60px;
     margin-bottom: 60px;
   }
 

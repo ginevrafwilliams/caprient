@@ -4,6 +4,7 @@
   bottom: 0;
   width: 100%;
   z-index: 999;
+  visibility: hidden;
 }
 
 .my-footer {
@@ -87,11 +88,12 @@
   text-decoration: none;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 1030px) {
   .footer-ce-trn {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    visibility: visible;
   }
 
   .footer-ce-trn .info {
@@ -142,3 +144,4 @@
   text-decoration: none;
 }
 }
+

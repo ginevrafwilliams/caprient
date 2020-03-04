@@ -64,28 +64,35 @@
 </div>
 
 <div class="project-story">
-  <p class="categoria"> LA STORIA </p>
-  <p class="contenuto"><%= @project.story %></p>
+  <% if @project.story != "" %>
+    <div class="categoria">
+      <p> LA STORIA </p>
+    </div>
+    <p class="contenuto"><%= @project.story %></p>
+  <% end %>
 </div>
 
 <!-- video -->
 
 <div class="project-more">
-  <p class="project-extra-text">VIDEO</p>
   <div class="project-primary">
-    <% if @project.youtube != nil %>
+    <% if @project.youtube != "" %>
+      <div class="project-extra-text">
+        <p>VIDEO</p>
+      </div>
       <div class="video">
         <iframe src="https://player.vimeo.com/video/<%= @project.youtube %>" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
       </div>
     <% end %>
   </div>
+
   <div class="project-extra">
-    <% if @project.youtube2 != nil %>
+    <% if @project.youtube2 != "" %>
       <div class="video1">
         <iframe src="https://player.vimeo.com/video/<%= @project.youtube2 %>" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
       </div>
     <% end %>
-    <% if @project.youtube3 != nil %>
+    <% if @project.youtube3 != "" %>
       <div class="video2">
         <iframe src="https://player.vimeo.com/video/<%= @project.youtube3 %>" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
       </div>
@@ -93,31 +100,31 @@
   </div>
 
   <div class="project-extra">
-    <% if @project.youtube4 != nil %>
+    <% if @project.youtube4 != "" %>
       <div class="video1">
         <iframe src="https://player.vimeo.com/video/<%= @project.youtube4 %>" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
       </div>
     <% end %>
-    <% if @project.youtube5 != nil %>
+    <% if @project.youtube5 != "" %>
       <div class="video2">
         <iframe src="https://player.vimeo.com/video/<%= @project.youtube5 %>" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
       </div>
     <% end %>
   </div>
 
-    <div class="project-extra">
-    <% if @project.youtube6 != nil %>
+  <div class="project-extra">
+    <% if @project.youtube6 != "" %>
       <div class="video1">
         <iframe src="https://player.vimeo.com/video/<%= @project.youtube6 %>" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
       </div>
     <% end %>
-    <% if @project.youtube7 != nil %>
+    <% if @project.youtube7 != "" %>
       <div class="video2">
         <iframe src="https://player.vimeo.com/video/<%= @project.youtube7 %>" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
       </div>
     <% end %>
   </div>
-
+</div>
 
 
 <!-- footer -->

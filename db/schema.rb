@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_02_29_173520) do
+ActiveRecord::Schema.define(version: 2020_03_04_134302) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -59,6 +59,8 @@ ActiveRecord::Schema.define(version: 2020_02_29_173520) do
     t.string "youtube4"
     t.string "youtube5"
     t.string "youtube6"
+    t.string "creativity"
+    t.string "youtube7"
   end
 
   create_table "projects", force: :cascade do |t|
@@ -75,6 +77,13 @@ ActiveRecord::Schema.define(version: 2020_02_29_173520) do
     t.string "coproduction3"
     t.string "coproduction4"
     t.string "coproduction5"
+    t.string "youtube"
+    t.string "youtube2"
+    t.string "youtube3"
+    t.string "youtube4"
+    t.string "youtube5"
+    t.string "youtube6"
+    t.string "youtube7"
   end
 
   create_table "reports", force: :cascade do |t|

@@ -60,9 +60,11 @@
   </div>
   <div class="creativita">
     <p class="categoria">CREATIVITÀ</p>
-    <p class="contenuto"><%= @branded.direction %></p>
+    <p class="contenuto"><%= @branded.creativity %></p>
   </div>
 </div>
+
+<!-- video -->
 
 <div class="branded-more">
   <p class="branded-extra-text">VIDEO</p>
@@ -101,13 +103,13 @@
 
     <div class="branded-extra">
     <% if @branded.youtube6 != "" %>
-      <div class="video">
-        <iframe src="https://player.vimeo.com/video/<%= @branded.youtube4 %>" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+      <div class="video1">
+        <iframe src="https://player.vimeo.com/video/<%= @branded.youtube6 %>" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
       </div>
     <% end %>
-    <% if @branded.youtube6 != "" %>
+    <% if @branded.youtube7 != "" %>
       <div class="video2">
-        <iframe src="https://player.vimeo.com/video/<%= @branded.youtube5 %>" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        <iframe src="https://player.vimeo.com/video/<%= @branded.youtube7 %>" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
       </div>
     <% end %>
   </div>

@@ -21,6 +21,13 @@ class ProjectDashboard < Administrate::BaseDashboard
     coproduction5: Field::String,
     distribution: Field::String,
     story: Field::Text,
+    youtube: Field::String,
+    youtube2: Field::String,
+    youtube3: Field::String,
+    youtube4: Field::String,
+    youtube5: Field::String,
+    youtube6: Field::String,
+    youtube7: Field::String,
     created_at: Field::DateTime,
     updated_at: Field::DateTime,
   }.freeze
@@ -53,6 +60,13 @@ class ProjectDashboard < Administrate::BaseDashboard
   coproduction5
   distribution
   story
+  youtube
+  youtube2
+  youtube3
+  youtube4
+  youtube5
+  youtube6
+  youtube7
   created_at
   updated_at
   ].freeze
@@ -72,6 +86,13 @@ class ProjectDashboard < Administrate::BaseDashboard
   distribution
   story
   image
+  youtube
+  youtube2
+  youtube3
+  youtube4
+  youtube5
+  youtube6
+  youtube7
   ].freeze
 
   # COLLECTION_FILTERS

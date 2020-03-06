@@ -16,6 +16,10 @@
     transform-style: preserve-3d;
   }
 
+  .carousel-item .active {
+    width: 100%;
+  }
+
 .carousel-caption h5 {
   font-size: 25px;
 }
@@ -27,6 +31,8 @@
 .my-carousel {
   position: absolute;
   top: 0;
+  right: 0;
+  left: 0;
   // bottom: 0;
 }
 

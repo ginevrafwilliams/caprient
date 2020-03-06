@@ -259,5 +259,10 @@
   .branded-info .cliente {
     margin-bottom: 0px;
   }
+}
 
+@media (min-width: 1500px) {
+    .banner-branded img {
+      height: 630px;
+    }
 }

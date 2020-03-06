@@ -129,7 +129,7 @@
 
   .article-extra-text {
     font-size: 20px;
-    margin-left: 20px;
+    margin-left: 40px;
   }
 
   .article-other {
@@ -154,4 +154,10 @@
   .article-other .article-title-other a {
     color: white;
   }
+}
+
+@media (min-width: 1500px) {
+    .banner-article img {
+      height: 630px;
+    }
 }

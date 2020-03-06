@@ -273,3 +273,9 @@
     padding-bottom: 60px;
   }
 }
+
+@media (min-width: 1500px) {
+    .banner-project img {
+      height: 630px;
+    }
+}

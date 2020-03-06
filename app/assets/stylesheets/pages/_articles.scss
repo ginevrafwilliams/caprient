@@ -105,8 +105,12 @@
   }
 }
 
-@media (min-width: 1500px) {
+@media (min-width: 1300px) {
     .article .article-box .article-container {
+      height: 530px;
+    }
+
+    .article .article-box-right .article-container {
       height: 530px;
     }
 }

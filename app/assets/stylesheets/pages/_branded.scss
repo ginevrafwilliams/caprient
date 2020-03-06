@@ -176,7 +176,7 @@
 
   .branded-extra {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     // margin-bottom: 30px;
   }
 
@@ -229,7 +229,7 @@
 
   .branded-info {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     margin-top: 0;
     margin-bottom: 0;
     margin-top: 60px;
@@ -261,8 +261,14 @@
   }
 }
 
-@media (min-width: 1500px) {
+@media (min-width: 1300px) {
     .banner-branded img {
       height: 630px;
     }
-}
+
+    .video {
+      height: 880px;
+      width: 100%;
+    }
+
+  }

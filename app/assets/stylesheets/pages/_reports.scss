@@ -109,8 +109,12 @@
 
 }
 
-@media (min-width: 1500px) {
+@media (min-width: 1300px) {
     .report .report-box .report-container  {
+      height: 530px;
+    }
+
+    .report .report-box-right .report-container  {
       height: 530px;
     }
 }

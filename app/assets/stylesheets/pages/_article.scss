@@ -123,18 +123,17 @@
   .article-extra {
     margin-top: 60px;
     margin-bottom: 60px;
-    margin-left: 30px;
-    margin-right: 30px;
+    margin-left: 100px;
+    margin-right: 100px;
   }
 
   .article-extra-text {
     font-size: 20px;
-    margin-left: 40px;
   }
 
   .article-other {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
   }
 
   .test {
@@ -156,7 +155,7 @@
   }
 }
 
-@media (min-width: 1500px) {
+@media (min-width: 1300px) {
     .banner-article img {
       height: 630px;
     }

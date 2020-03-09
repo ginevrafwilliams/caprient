@@ -176,7 +176,7 @@
 
   .branded-extra {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     // margin-bottom: 30px;
   }
 
@@ -281,6 +281,10 @@
       width: 700px;
     }
 
+
+  }
+
+  @media (min-width: 1500px) {
     .branded-info {
       margin-left: 200px;
       margin-right: 200px;
@@ -290,5 +294,4 @@
       margin-left: 200px;
       margin-right: 200px;
     }
-
   }

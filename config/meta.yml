@@ -1,7 +1,13 @@
 # config/meta.yml
 
-meta_product_name: "Capri Entertainment"
-meta_title: "Capri Entertainment"
-meta_description: "Capri Entertainment è un progetto culturale, una società di produzione cinematografica, televisiva, pubblicitaria, una factory di talenti."
-meta_image: "caprifamily.jpeg" # should exist in `app/assets/images/`
+# meta_product_name: "Capri Entertainment"
+# meta_title: "Capri Entertainment"
+# meta_description: "Capri Entertainment è un progetto culturale, una società di produzione cinematografica, televisiva, pubblicitaria, una factory di talenti."
+# meta_image: "caprifamily.jpeg" # should exist in `app/assets/images/`
+# twitter_account: "@product_twitter_account"   # required for Twitter Cards
+
+meta_product_name: "Product Name"
+meta_title: "Product name - Product tagline"
+meta_description: "Relevant description"
+meta_image: "cover.png" # should exist in `app/assets/images/`
 twitter_account: "@product_twitter_account"   # required for Twitter Cards

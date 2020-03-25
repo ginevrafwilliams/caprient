@@ -12,7 +12,7 @@
 }
 
 .navbar-brand img {
-  width: 180px;
+  width: 190px;
 }
 
 // navbar links
@@ -68,13 +68,15 @@
   background-color: transparent;
 }
 
-
-
 // burger menu
 
 @media (max-width: 1000px)  {
   #navbarSupportedContent {
     height: 100vh !important;
+  }
+
+  .navbar-brand img {
+    width: 170px;
   }
 
   .bg-light {

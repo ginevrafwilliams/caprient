@@ -17,6 +17,7 @@ gem 'webpacker'
 gem 'cloudinary', '~> 1.12.0'
 gem "administrate"
 gem 'administrate-field-active_storage'
+gem 'cookies_eu'
 
 group :development do
   gem 'web-console', '>= 3.3.0'

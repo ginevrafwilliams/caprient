@@ -8,4 +8,8 @@ class PagesController < ApplicationController
   def home
     @projects = Project.limit(5).order('id desc')
   end
+
+  def privacypolicy
+  end
+
 end

@@ -20,4 +20,14 @@ body {
 
 .cookies-eu {
   background: rgba(0, 20, 37, 0.7);
+  border-top: 1px solid rgba(0, 20, 37, 0.7);
+}
+
+.cookies-eu a {
+  color: white;
+  opacity: 0.5;
+}
+
+.cookies-eu a:hover {
+  color: white;
 }

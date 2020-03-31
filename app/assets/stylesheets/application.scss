@@ -30,10 +30,11 @@ body {
 
 .cookies-eu a:hover {
   color: white;
+  opacity: 1;
   text-decoration: none;
 }
 
-.cookies-eu-ok {
+.cookies-eu .cookies-eu-button-holder .cookies-eu-ok {
   background-color: transparent;
   border: 1px solid white;
 }

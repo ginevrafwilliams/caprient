@@ -21,7 +21,6 @@ body {
 .cookies-eu {
   background: rgba(0, 20, 37, 0.7);
   border-top: 1px solid rgba(0, 20, 37, 0.7);
-  position: default;
 }
 
 .cookies-eu a {
@@ -44,4 +43,11 @@ body {
 
 .cookies-eu .cookies-eu-button-holder .cookies-eu-ok a:hover {
   color: white;
+}
+
+@media (max-width: 767px)
+.cookies-eu {
+    font-size: 12px;
+    line-height: 30px;
+    position: default;
 }

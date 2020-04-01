@@ -9,5 +9,5 @@
 meta_product_name: "Capri Entertainment"
 meta_title: "Capri Entertainment - A New Perspective"
 meta_description: "Capri Entertainment è un progetto culturale, una società di produzione cinematografica, televisiva, pubblicitaria, una factory di talenti."
-meta_image: "logo_copy.png" # should exist in `app/assets/images/`
+meta_image: "logo_blu.png" # should exist in `app/assets/images/`
 twitter_account: "@product_twitter_account"   # required for Twitter Cards

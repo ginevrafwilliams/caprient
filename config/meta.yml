@@ -7,7 +7,7 @@
 # twitter_account: "@product_twitter_account"   # required for Twitter Cards
 
 meta_product_name: "Capri Entertainment"
-meta_title: "Capri Entertainment "
+meta_title: "Capri Entertainment | Production Company"
 meta_description: "Capri Entertainment è un progetto culturale, una società di produzione cinematografica, televisiva e pubblicitaria."
 meta_image: "logo-blutext.png" # should exist in `app/assets/images/`
 twitter_account: "@product_twitter_account"   # required for Twitter Cards

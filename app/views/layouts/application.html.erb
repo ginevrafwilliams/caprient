@@ -32,8 +32,8 @@
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
     <%= yield %>
-    <%= render 'cookies_eu/consent_banner', link: '/privacypolicy' %>
     <%= javascript_include_tag 'application' %>
     <%= javascript_pack_tag 'application' %>
+    <%= render 'cookies_eu/consent_banner', link: '/privacypolicy' %>
   </body>
 </html>

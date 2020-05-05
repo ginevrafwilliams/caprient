@@ -1,6 +1,6 @@
 <% content_for :meta_title, "#{@article.title} | #{DEFAULT_META["meta_product_name"]}" %>
 <% content_for :meta_description, @article.text.split('.').first %>
-<% content_for :meta_image, cl_image_path(@article.image.key) %>
+<% content_for :meta_image, cl_image_path(@article.image.service_url) %>
 
 
 <div class="superbox">

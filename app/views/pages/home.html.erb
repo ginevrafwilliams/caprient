@@ -65,7 +65,7 @@ const hamburger = document.querySelector('button');
           <%= link_to project_path(project) do %>
             <div class="carousel-caption">
               <h5><%= project.title.upcase %></h5>
-              <p><%= project.coproduction %>, <%= project.coproduction2 %></p>
+              <p><%= project.coproduction %> <%= project.coproduction2 %></p>
             </div>
           <% end %>
         </div>
